@@ -1,0 +1,27 @@
+:root{--ameixa:#57372E;--tinta:#3A2824;--mudo:#6E544B;--lilas:#DCD0EC;--nevoa:#F7F3FA;--pessego:#F4A28A;--mostarda:#E3B04B;--folha:#3E6B4B;--ceu:#D3E6F2;--claro:#E3D6EE}
+*{box-sizing:border-box}
+body{margin:0;background:var(--nevoa);color:var(--tinta);font-family:'Literata',Georgia,serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ol,ul{margin:0}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;color:var(--ameixa);font-weight:700;letter-spacing:-0.03em}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-left:40px;padding-right:40px}
+.t-display{font-size:clamp(48px,7vw,104px);line-height:.95;letter-spacing:-0.04em}
+.t-h2{font-size:clamp(34px,4vw,52px);line-height:1.05}
+.t-h3{font-size:28px;line-height:1.2;letter-spacing:-0.02em}
+.lede{font-size:22px;line-height:1.6}
+.body{font-size:19px;line-height:1.7}
+.small{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:15px;line-height:1.5}
+.nl{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:500;font-size:17px;color:var(--ameixa);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+.nl:hover,.nl[aria-current="page"]{border-bottom-color:var(--pessego)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px;border-radius:999px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:600;font-size:17px;text-decoration:none;background:var(--ameixa);color:var(--nevoa);border:2px solid var(--ameixa)}
+.btn:hover{background:#734A3E;border-color:#734A3E}
+.btn.alt{background:transparent;color:var(--ameixa)}
+.btn.sol{background:var(--pessego);border-color:var(--pessego);color:var(--ameixa)}
+.btn.sol:hover{background:#F8B9A5;border-color:#F8B9A5}
+.chip{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;border:2px solid var(--ameixa);font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:600;font-size:16px;color:var(--ameixa);text-decoration:none}
+.chip:hover{background:var(--lilas)}
+.chip[aria-current="true"]{background:var(--ameixa);color:var(--nevoa)}
+.post{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px 56px;padding:36px 0;border-top:1px solid #E4CFC4;text-decoration:none;color:var(--ameixa)}
+.post:hover .rt{text-decoration:underline;text-decoration-color:var(--pessego);text-decoration-thickness:3px;text-underline-offset:6px}
+a:focus-visible{outline:3px solid #B8583A;outline-offset:3px}
+.dark a:focus-visible{outline-color:var(--ameixa)}
