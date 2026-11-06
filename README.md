@@ -1,26 +1,16 @@
-# Site Débora Lima
+# Site da Débora Lima
 
-Frontend estático (HTML + CSS) do site da psicóloga e psicanalista Débora Lima, convertido do design "Site Débora Lima".
+Projeto da KAYRÁhub. Instruções para o Claude Code em `CLAUDE.md`; documentação em `docs/`.
 
-## Páginas
-| Arquivo | Página |
-|---|---|
-| `index.html` | Home (desktop e versão celular, com menu) |
-| `sobre.html` | Trajetória |
-| `formacao.html` | Formação e títulos |
-| `atendimento.html` | Atendimento |
-| `blog.html` | Lista do blog |
-| `post.html` | Modelo de texto do blog |
-| `contato.html` | Contato |
+## Estado atual
+Ainda não existe o site. O que há em `design/prototipo-html/` é um **protótipo de referência** (HTML estático convertido do design "Site Débora Lima"), para apoiar o handoff do Fabiano (tarefa 4.7). Ele **não** segue as regras do projeto e não deve ir para produção:
+- carrega fontes do Google Fonts (regra 4: fontes devem ser hospedadas no próprio domínio);
+- usa estilos inline (regra 5: CSP estrita);
+- não usa Eleventy nem a estrutura de dois repositórios.
 
-## Estrutura
-- `assets/css/<pagina>.css` estilos de cada página
-- `assets/js/site.js` menu do celular e parallax
-- `assets/img/` fotos
+Textos de blog e contato ainda são placeholders (`[Título do texto]`, `wa.me/` sem número, `mailto:` sem endereço). Os textos das páginas vieram do design e ainda precisam de revisão pelo `docs/CFP-CONTEUDO.md` (tarefa 3.4).
 
-## Pendências para o backend / conteúdo
-- Textos do blog (`[Título do texto]`, `[Mês e ano]`) e os temas do filtro estão como placeholders.
-- WhatsApp (`https://wa.me/`) e e-mail (`mailto:`) precisam do número e do endereço reais.
-- `post.html` é um modelo: o backend deve gerar uma página por texto.
+Para ver o protótipo: `cd design/prototipo-html && python3 -m http.server`.
 
-Para ver localmente: `python3 -m http.server` e abrir http://localhost:8000.
+## Próximo passo
+Fase 5.1: esqueleto Eleventy a partir de `kayrahub-ops/meio_fio`, depois das fases 1 e 2 (contas e spikes), com o João.
