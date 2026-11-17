@@ -1,0 +1,14 @@
+# Segredos e arquivos locais (docs/SEGURANCA.md, S-02)
+.env
+.env.*
+*.pem
+*.key
+config/
+node_modules/
+
+# Teste do spike S1: o painel baixado do npm não vai para o Git
+spikes/s1/package/
+spikes/s1/*.tgz
+spikes/s1/admin/*
+!spikes/s1/admin/index.html
+!spikes/s1/admin/config.yml

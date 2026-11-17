@@ -1,0 +1,32 @@
+# Configuração do painel para o TESTE do spike S1.
+backend:
+  name: github
+  repo: kayrahub-ops/debora-lima-conteudo   # troque se o seu repositório de teste tiver outro nome
+  branch: main
+  base_url: http://localhost:8080            # endereço do servidor de teste local
+  auth_endpoint: auth                        # o painel abre http://localhost:8080/auth numa janela
+
+locale: pt
+site_url: http://localhost:8080
+media_folder: content/uploads
+public_folder: /uploads
+
+collections:
+  - name: posts
+    label: Textos do blog
+    label_singular: Texto
+    folder: content/posts
+    create: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - { name: titulo, label: Título, widget: string }
+      - { name: data, label: Data e hora de publicação, widget: datetime }
+      - { name: resumo, label: Resumo, widget: text }
+      - { name: tema, label: Tema, widget: string, required: false }
+      - { name: capa, label: Imagem de capa, widget: image, required: false }
+      - { name: capa_alt, label: Descrição da capa (para quem não enxerga a imagem), widget: string, required: false }
+      - { name: publicado, label: Publicado, widget: boolean, default: false }
+      - { name: revisado, label: Revisado (conferi o checklist do CFP), widget: boolean, default: false }
+      - { name: body, label: Texto, widget: markdown }
