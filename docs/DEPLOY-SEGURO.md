@@ -154,7 +154,7 @@ jobs:
 
 ## 5. Escolhas que merecem explicação
 1. **Por que não usar Netlify em produção:** o login do painel é PHP e não roda lá. O link do Netlify serve só para a Débora aprovar o visual e deve ser apagado no go-live.
-2. **Por que o ambiente `producao` não tem revisor obrigatório:** o botão "aprovar" travaria toda publicação da Débora, e ela não tem conta no GitHub. A barreira humana aqui é a caixa `revisado` do post e a proteção da branch `main`. O ambiente fica restrito à `main` (Settings → Environments → Deployment branches). **Decisão sua:** se preferir aprovar cada deploy, os posts agendados e os da Débora só saem depois do seu clique.
+2. **Sem aprovação manual de deploy (decidido):** a Débora tem autonomia total e ninguém da equipe aprova publicações. Por isso o ambiente `producao` não tem revisor. As barreiras são automáticas: o `scripts/validar-conteudo.mjs` reprova o build se o conteúdo estiver fora do padrão, a conta-robô só escreve no repo de conteúdo, e o ambiente fica restrito à `main` (Settings → Environments → Deployment branches). A caixa `revisado` é o checklist do CFP da própria Débora, não uma aprovação nossa.
 3. **O deploy não é atômico:** o `lftp` envia arquivo por arquivo. Durante alguns segundos o site pode misturar páginas novas e antigas. Para um site de leitura isso é aceitável. Se incomodar, a alternativa é enviar para uma pasta ao lado e renomear (`[VALIDAR]` se o servidor permite renomear pastas por SFTP).
 4. **Apagar órfãos:** fica desligado por padrão e só roda com a caixa marcada no disparo manual. O `CLAUDE.md` pede sua confirmação no primeiro deploy.
 
