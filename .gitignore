@@ -12,3 +12,6 @@ spikes/s1/*.tgz
 spikes/s1/admin/*
 !spikes/s1/admin/index.html
 !spikes/s1/admin/config.yml
+
+# Saída do build
+_site/

@@ -1,0 +1,6 @@
+Fontes hospedadas no próprio site (sem Google Fonts por link), todas sob SIL Open Font License 1.1.
+Arquivos woff2 extraídos dos pacotes @fontsource-variable (versão 5.3.0), subconjunto "latin".
+
+- Bricolage Grotesque: LICENSE-bricolage-grotesque.txt
+- Literata:            LICENSE-literata.txt
+- Roboto Serif:        LICENSE-roboto-serif.txt

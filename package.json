@@ -1,0 +1,19 @@
+{
+  "name": "debora-lima-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Site institucional estático de Débora Lima, psicóloga e psicanalista",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "verificar": "node scripts/verificar-site.mjs _site",
+    "teste": "node --test scripts/testes/validar-conteudo.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.8"
+  }
+}

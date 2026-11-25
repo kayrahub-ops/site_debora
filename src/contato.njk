@@ -1,0 +1,54 @@
+---
+layout: base.njk
+titulo: "Contato"
+css: contato
+atual: contato
+permalink: /contato/index.html
+---
+<div class="u18">
+
+
+
+{% include "cabecalho.njk" %}
+
+<section class="wrap u245">
+<div class="u246">
+<h1 class="t-display">Contato</h1>
+<p class="lede u71">A primeira conversa é por WhatsApp ou e-mail. Os horários são combinados ali.</p>
+</div>
+<div class="u247">
+<div class="canal">
+<span class="ico u248" aria-hidden="true"><svg class="i-conversa u61" viewBox="0 0 100 100"><use href="#ic-conversa"/></svg></span><h2 class="t-h3">WhatsApp</h2>
+<p class="body u6">{{ site.whatsapp_exibicao }}</p>
+<div><a class="btn" href="https://wa.me/{{ site.whatsapp }}">Chamar no WhatsApp</a></div>
+</div>
+<div class="canal u176">
+<span class="ico u175" aria-hidden="true"><svg class="i-escuta u70" viewBox="0 0 100 100"><use href="#ic-escuta"/></svg></span><h2 class="t-h3">E-mail</h2>
+<p class="body u6">{{ site.email_exibicao }}</p>
+<div><a class="btn alt" href="mailto:{{ site.email }}">Enviar e-mail</a></div>
+</div>
+</div>
+</section>
+
+<section class="wrap u249">
+<img class="u250" src="/assets/img/xicara-mesa.jpg" alt="Mãos segurando uma xícara rosa sobre uma mesa de madeira, ao lado de uma pilha de livros e um notebook">
+</section>
+
+<section class="wrap u214">
+<div class="u215">
+<span class="ico u74" aria-hidden="true"><svg class="i-arco u75" viewBox="0 0 100 100"><use href="#ic-arco"/></svg></span><h2 class="t-h3">Onde atendo</h2>
+<p class="body">Presencialmente em Santos, SP, e online.</p>
+</div>
+<div class="u215">
+<span class="ico u77" aria-hidden="true"><svg class="i-onda u78" viewBox="0 0 100 100"><use href="#ic-onda"/></svg></span><h2 class="t-h3">Horários</h2>
+<p class="body">Combinados na primeira conversa, para entender a necessidade de cada pessoa.</p>
+</div>
+<div class="u215">
+<span class="ico u203" aria-hidden="true"><svg class="i-livro u83" viewBox="0 0 100 100"><use href="#ic-livro"/></svg></span><h2 class="t-h3">Registro</h2>
+<p class="body">CRP 06/132697.</p>
+</div>
+</section>
+
+{% include "rodape.njk" %}
+
+</div>

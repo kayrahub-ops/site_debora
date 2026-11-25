@@ -1,0 +1,4 @@
+/* Fontes do próprio site (OFL 1.1). Subconjunto latino cobre todo o português. */
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-display:swap;font-weight:200 800;src:url(/assets/fonts/bricolage-grotesque-latin-opsz-normal.woff2) format('woff2-variations'),url(/assets/fonts/bricolage-grotesque-latin-opsz-normal.woff2) format('woff2')}
+@font-face{font-family:'Literata';font-style:normal;font-display:swap;font-weight:200 900;src:url(/assets/fonts/literata-latin-opsz-normal.woff2) format('woff2-variations'),url(/assets/fonts/literata-latin-opsz-normal.woff2) format('woff2')}
+@font-face{font-family:'Roboto Serif';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:50% 150%;src:url(/assets/fonts/roboto-serif-latin-wdth-normal.woff2) format('woff2-variations'),url(/assets/fonts/roboto-serif-latin-wdth-normal.woff2) format('woff2')}

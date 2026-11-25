@@ -1,0 +1,54 @@
+---
+layout: base.njk
+titulo: "Texto do blog"
+css: post
+atual: blog
+permalink: /blog/modelo/index.html
+noindex: true
+---
+<div class="u18">
+
+{% include "cabecalho.njk" %}
+
+<article>
+<div class="col u235">
+<div><a class="lnk" href="/blog/">Voltar ao blog</a></div>
+<div class="u236">
+<p class="small u135">[Mês e ano]</p>
+<p class="small u135">[Tema]</p>
+</div>
+<h1 class="u237">[Título do texto, em até duas linhas]</h1>
+<p class="lede u6">[Resumo do texto em duas linhas.]</p>
+</div>
+
+<div class="col u238">
+<p class="leitura">[Parágrafo de abertura, de três a cinco linhas. O corpo do texto usa Literata em 20 pixels, com linhas de até 68 caracteres.]</p>
+<p class="leitura">[Segundo parágrafo.]</p>
+<p class="leitura">[Terceiro parágrafo.]</p>
+<h2 class="t-h3 u114">[Intertítulo]</h2>
+<p class="leitura">[Parágrafo depois do intertítulo.]</p>
+<p class="leitura">[Parágrafo de fechamento.]</p>
+</div>
+
+<div class="col u239">
+<div class="u240">
+<p class="u241">Débora Lima</p>
+<p class="small u135">Psicóloga e psicanalista. CRP 06/132697.</p>
+<p class="small u135">Este texto tem caráter informativo e não substitui o atendimento psicológico.</p>
+</div>
+</div>
+</article>
+
+<section class="u242">
+<div class="wrap u189">
+<h2 class="t-h2">Continue lendo</h2>
+<div class="u243">
+<a class="post u244" href="/blog/modelo/"><span class="t-h3 rt">[Título do texto]</span><span class="small u6">[Mês e ano]</span></a>
+<a class="post u244" href="/blog/modelo/"><span class="t-h3 rt">[Título do texto]</span><span class="small u6">[Mês e ano]</span></a>
+</div>
+</div>
+</section>
+
+{% include "rodape.njk" %}
+
+</div>
