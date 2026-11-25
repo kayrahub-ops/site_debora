@@ -22,5 +22,5 @@ npm start            # servidor local com recarga automática
 - Contato: preencher `whatsapp` e `email` em `src/_data/site.json`.
 - Blog: textos ainda são modelos (`[Título do texto]`); as páginas `/blog/` e `/blog/modelo/` estão com `noindex` até o blog existir (fase 6).
 - Link do Lattes trocado para `https://`: clicar e conferir (tarefa 9.2).
-- Os estilos vieram do protótipo (`src/assets/css/utilidades.css` é gerado a partir dos estilos que estavam inline). Consolidar com os tokens do Fabiano (tarefas 4.7 e 5.2).
+- O protótipo é o design final. `src/assets/css/utilidades.css` foi gerado a partir dos estilos que estavam inline e não deve ser reescrito à mão sem necessidade; uma arrumação do CSS é opcional e só vale se for fazer manutenção visual no futuro.
 - Painel (`/admin/`) e login ainda não existem (fase 7; spike S1).
