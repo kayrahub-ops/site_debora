@@ -31,6 +31,7 @@ Débora → /admin/ (Decap) → "Entrar"
 | D-14 | Domínio comprado pela Débora; homologação em `teste.kayrahub.com.br` | Decidido |
 | D-15 | Textos das páginas institucionais editáveis pelo painel? | `[DECIDIR]` (padrão: só o blog) |
 | D-16 | Garantia de 6 meses pela KAYRÁhub | Decidido |
+| D-17 | Plano B do login: se a Locaweb não oferecer PHP corrigido (falhas PHP2Shell, CVE-2026-109618/109619, out/2026), o login vira função serverless em Node e a hospedagem fica 100% estática | Só se acionado; o suporte da Locaweb afirmou (por chat, nov/2026) que os servidores estão protegidos, a confirmar por escrito `[VALIDAR]` |
 
 ### Por que não o fluxo editorial do Decap
 O `editorial_workflow` trabalha com branches e pull requests no GitHub. Isso exige permissões maiores do token e deixa o estado do rascunho espalhado em branches. Dois campos no post (`publicado` e `revisado`) dão o mesmo resultado com menos peças.
@@ -107,7 +108,7 @@ Portar do `netlify.toml` do Meio Fio: `X-Content-Type-Options`, `X-Frame-Options
 | XSS por post | HTML cru desligado; escape em título, resumo e alt; CSP sem scripts inline |
 | E-mail Google indevido entrar | Lista com comparação exata, `email_verified`, 2FA recomendado na conta Google da Débora |
 | Token expirar após a garantia | Runbook de renovação em `MANUTENCAO.md` e lembrete no calendário |
-| PHP desatualizado | Escolher a versão mais nova no painel; revisar a cada trimestre |
+| PHP desatualizado ou com falha (ex.: PHP2Shell, out/2026) | Escolher a versão mais nova no painel mesmo que a Locaweb diga que a antiga é segura; PHP só em `auth/`; conferir a versão todo mês na garantia; plano B em D-17 |
 | FTP sem criptografia | Proibido; só SFTP/FTPS |
 
 ## 10. Pontos a validar (spikes da fase 2)

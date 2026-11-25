@@ -8,7 +8,7 @@ Cobre: correção de falhas do que foi entregue, atualização do PHP e das depe
 ## Rotinas
 | Quando | O quê |
 |---|---|
-| Todo mês | Conferir alertas do Dependabot; abrir o site e o painel; conferir que o último deploy passou |
+| Todo mês | Conferir alertas do Dependabot; abrir o site e o painel; conferir que o último deploy passou; conferir no painel da Locaweb que o PHP está na versão mais nova disponível |
 | A cada 3 meses | Revisar a versão do PHP no painel da Locaweb; rodar `npm audit`; revisar o relatório de acessos do login |
 | 30 dias antes do vencimento | Renovar o token da conta-robô |
 | Todo ano | Renovação do domínio (Registro.br, em nome da Débora): avisar com antecedência |
