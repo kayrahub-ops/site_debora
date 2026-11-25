@@ -40,7 +40,7 @@ Prazo não é o foco por ora; o medidor é o número de tarefas e fases concluí
 - [ ] 1.3 Gerar o token fino da conta-robô (só conteúdo; Contents RW e Metadata R; sem Workflows; validade ≤ 12 meses). Guardar só em `config/` no servidor (J)
 - [ ] 1.4 Gerar o token fino de disparo (permissão Actions só no repo de código) e guardar como secret do repo de conteúdo (J)
 - [ ] 1.5 Ativar Dependabot e alertas de segurança nos dois repos; 2FA em todos os membros (J)
-- [ ] 1.6 Criar o subdomínio de teste (`teste.kayrahub.com.br`) e instalar o HTTPS Let's Encrypt pelo painel (J)
+- [ ] 1.6 Criar o subdomínio de homologação (`debora.kayrahub.com.br`) e instalar o HTTPS Let's Encrypt pelo painel (J)
 - [ ] 1.7 Rodar `diagnostico-locaweb.php` no teste, guardar o resultado em `docs/` e apagar o arquivo do servidor (J)
 - [ ] 1.8 Escolher a versão mais nova do PHP no painel e registrar qual (J)
 - [ ] 1.9 Criar conta SFTP/FTPS exclusiva do deploy, limitada ao site, se o painel permitir (J)

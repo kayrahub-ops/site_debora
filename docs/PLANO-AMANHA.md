@@ -93,9 +93,9 @@ Serve para o repo de conteúdo avisar o repo de código que há post novo.
 Nos dois repos: Settings → Code security → ligue **Dependabot alerts** e **Dependabot security updates**. Na organização: exija 2FA para todos os membros (Settings da organização → Authentication security).
 
 ### 1.6 Subdomínio de teste na Locaweb
-1. Painel da Locaweb → Hospedagem → Domínios/Subdomínios → criar `teste.kayrahub.com.br` apontando para uma pasta própria (por exemplo `teste`).
+1. Painel da Locaweb → Hospedagem → Domínios/Subdomínios → criar `debora.kayrahub.com.br` apontando para uma pasta própria (por exemplo `debora`).
 2. Instale o certificado **Let's Encrypt** pelo painel.
-3. Pronto quando `https://teste.kayrahub.com.br` abre com cadeado (mesmo mostrando página em branco).
+3. Pronto quando `https://debora.kayrahub.com.br` abre com cadeado (mesmo mostrando página em branco).
 `[VALIDAR]` se o DNS do `kayrahub.com.br` está na Locaweb; se estiver em outro lugar (Registro.br, Cloudflare), crie o registro lá.
 
 ### 1.7 Diagnóstico da hospedagem
@@ -114,7 +114,7 @@ Se a conta não puder ser limitada, anote isso: vira ponto de atenção na segur
 1. https://console.cloud.google.com → criar projeto `debora-lima-painel` (conta Google da KAYRÁhub).
 2. APIs e serviços → **Tela de consentimento OAuth**: tipo **Externo**, nome do app `Painel Débora Lima`, e-mail de suporte seu. Escopos: apenas `openid` e `email`.
 3. Se o app ficar em "Teste", só e-mails cadastrados como "usuários de teste" entram. Cadastre o e-mail da Débora **quando ela informar** `[DÉBORA]`. Para o uso real, publique o app (`[VALIDAR]` se o Google exige verificação para escopos básicos; para `openid` e `email` normalmente não).
-4. Credenciais → Criar credenciais → **ID do cliente OAuth** → tipo **Aplicativo da Web**. URI de redirecionamento autorizada: `https://teste.kayrahub.com.br/auth/callback` (o caminho exato `[VALIDAR]` no spike S1).
+4. Credenciais → Criar credenciais → **ID do cliente OAuth** → tipo **Aplicativo da Web**. URI de redirecionamento autorizada: `https://debora.kayrahub.com.br/auth/callback` (o caminho exato `[VALIDAR]` no spike S1).
 5. Guarde **ID do cliente** e **chave secreta** no gerenciador. A chave secreta vai só para `config/` no servidor.
 
 Marque no plano 1.1 a 1.10 conforme concluir.

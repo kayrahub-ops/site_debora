@@ -28,7 +28,7 @@ Débora → /admin/ (Decap) → "Entrar"
 | D-11 | Sublinhado: não existe no Markdown padrão | `[DECIDIR]`: marcador próprio (como no Meio Fio) ou não oferecer |
 | D-12 | Blog sem comentários, sem newsletter, sem analytics, sem formulário | Proposto; confirmar com a Débora |
 | D-13 | Atualização do código PHP em `app/` (fora da pasta pública) | `[DECIDIR]`: manual pelo João (padrão) ou conta de deploy com acesso à raiz |
-| D-14 | Domínio comprado pela Débora; homologação em `teste.kayrahub.com.br` | Decidido |
+| D-14 | Domínio comprado pela Débora; homologação em `debora.kayrahub.com.br` | Decidido |
 | D-15 | Textos das páginas institucionais editáveis pelo painel? | `[DECIDIR]` (padrão: só o blog) |
 | D-16 | Garantia de 6 meses pela KAYRÁhub | Decidido |
 | D-17 | Plano B do login: se a Locaweb não oferecer PHP corrigido (falhas PHP2Shell, CVE-2026-109618/109619, out/2026), o login vira função serverless em Node e a hospedagem fica 100% estática | Só se acionado; o suporte da Locaweb afirmou (por chat, nov/2026) que os servidores estão protegidos, a confirmar por escrito `[VALIDAR]` |
